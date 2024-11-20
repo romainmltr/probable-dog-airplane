@@ -80,6 +80,8 @@ export const UploadImage = () => {
         <div className="upload-container">
             <h2>Upload an Image</h2>
             <input type="file" accept="image/*" onChange={handleFileChange} />
+            <p>Choose an image of a CIFAR-10 class:</p>
+            <p> "airplane", "automobile", "bird", "cat", "deer", "dog", "frog", "horse", "ship", "truck"</p>
             {selectedImage && (
                 <div className="image-preview">
                     <img src={selectedImage} alt="Selected" width={200} />

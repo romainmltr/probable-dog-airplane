@@ -52,9 +52,10 @@ To set up the frontend locally, follow these steps:
 ## Usage
 
 1. Open the web app in your browser.
-2. Upload an image of a CIFAR-10 class or any image you'd like to test.
+2. Upload an image of a CIFAR-10 class '** "airplane", "automobile", "bird", "cat", "deer", "dog", "frog", "horse", "ship", "truck" ' **
 3. The model will predict the class of the uploaded image and display the result.
 4. If the model is not trained, you can replace the backend model or use a pre-trained ONNX model in the application.
+5. 
 
 ---
 
@@ -65,6 +66,7 @@ The **web interface** allows users to upload images and display the model's pred
 1. A user uploads an image via the file input.
 2. The image is processed, and the pre-trained model makes predictions.
 3. The predicted class is displayed on the webpage.
+4. Use the assets in the folder assets to test online
 
 ---
 
