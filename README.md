@@ -1,70 +1,79 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# CIFAR-10 Image Classification Web Interface
 
-## Available Scripts
+This project provides a **web interface** that allows users to upload images and get predictions from a **pre-trained CIFAR-10 classification model**. The model classifies images from the CIFAR-10 dataset, which consists of 10 different classes of images. The web app is built using **React**, and the predictions are powered by an **ONNX model**.
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Project Overview](#project-overview)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Web Interface](#web-interface)
+- [Contributing](#contributing)
+- [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Overview
 
-### `npm test`
+This project includes a **web interface** where users can upload images and get predictions from a **pre-trained CIFAR-10 model**. The web app is designed for easy interaction with the model, and TensorBoard is used for logging the training metrics of the model (for developers). The interface is built using **React** and communicates with a backend model (in ONNX format).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The app takes an image, preprocesses it, and uses the pre-trained model to classify the image. The results are shown to the user in a user-friendly manner.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To set up the frontend locally, follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/cifar10-model-webapp.git
+    cd cifar10-model-webapp
+    ```
 
-### `npm run eject`
+2. Install the required dependencies:
+    ```bash
+    npm install
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Run the app locally:
+    ```bash
+    npm start
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Open your browser and go to:
+    ```
+    http://localhost:3000
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
+1. Open the web app in your browser.
+2. Upload an image of a CIFAR-10 class or any image you'd like to test.
+3. The model will predict the class of the uploaded image and display the result.
+4. If the model is not trained, you can replace the backend model or use a pre-trained ONNX model in the application.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Web Interface
 
-### Code Splitting
+The **web interface** allows users to upload images and display the model's predictions. Here's how it works:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. A user uploads an image via the file input.
+2. The image is processed, and the pre-trained model makes predictions.
+3. The predicted class is displayed on the webpage.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributing
 
-### Making a Progressive Web App
+Contributions are welcome! If you would like to contribute to this project, feel free to fork the repository, make improvements, and submit a pull request. For reporting issues or suggesting new features, open an issue in the GitHub repository.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more details.
