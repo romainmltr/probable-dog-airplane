@@ -28,8 +28,8 @@ To set up the frontend locally, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/cifar10-model-webapp.git
-    cd cifar10-model-webapp
+    git clone https://github.com/romainmltr/probable-dog-airplane.git
+    cd probable-dog-airplane
     ```
 
 2. Install the required dependencies:
