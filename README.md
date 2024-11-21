@@ -1,4 +1,3 @@
-a
 # CIFAR-10 Image Classification Web Interface
 
 This project provides a **web interface** that allows users to upload images and get predictions from a **pre-trained CIFAR-10 classification model**. The model classifies images from the CIFAR-10 dataset, which consists of 10 different classes of images. The web app is built using **React**, and the predictions are powered by an **ONNX model**.
